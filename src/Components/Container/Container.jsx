@@ -13,16 +13,18 @@ useEffect(()=> {
 
     return (
         <div className='container'>
-            <div className=' content-container'>
+             <div className='col content-container'>
                 {
                     news.map(news=> <News 
                         key={news.id}
                         news ={news}
                         ></News>)
                 }
+                question and ans
             </div>
-            <div className='bookmark-container'>
-                <h3>Ami seikhane</h3>
+            <div className='col bookmark-container'>
+                <div className='bookmark-time mb-4 p-3 rounded-4'><h6 className='fw-bold'>Spent time on read: </h6></div>
+                <div className='bookmarkedBlog p-3 rounded-2'><h6 className='fw-bold'>bookmaed Blog: </h6></div>
             </div>
         </div>
     );

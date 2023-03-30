@@ -1,5 +1,7 @@
 import React from 'react';
 import './News.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
 const News = ({news}) => {
     return (
@@ -16,7 +18,7 @@ const News = ({news}) => {
                 </div>
                 <div className='d-flex'>
                     <p className='fw-semibold text-secondary'>{news.readTime}</p>
-                    <button></button>
+                    <div className='btn-bookmark ms-1'><FontAwesomeIcon icon={faBookmark} /></div>
                     </div>
                 </div>
             <h2 className='blogTitle ms-2'>{news.blogTitle}</h2>

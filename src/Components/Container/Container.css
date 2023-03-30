@@ -8,6 +8,21 @@
     gap: 10px;
 }
 
+.bookmark-container{
+    position: sticky;
+    top: 0;
+    
+}
+
+.bookmark-time{
+    background-color:rgba(17, 17, 17, 0.05);
+    color: #6047EC;
+}
+
+.bookmarkedBlog{
+    background-color: rgba(17, 17, 17, 0.05);
+}
+
 
 
 
