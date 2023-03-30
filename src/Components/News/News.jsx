@@ -7,6 +7,9 @@ const News = (props) => {
     const {id, authorName, blogTitle, coverImage, authorImage, readTime, publishDate} = props.news
 
     const handelAddToCart = props.handelAddToCart;
+    const handelSpendTime = props.handelSpendTime;
+    
+    
 
     return (
         <div className='news'>
@@ -30,7 +33,7 @@ const News = (props) => {
                 <p>#beginners</p>
                 <p className='ms-3'>#programming</p>
             </div>
-            <p className='markAsRead mt-4 ms-2 fw-semibold'>Mark as read</p>
+            <div onClick={ ()=> handelSpendTime(props.news)} className='markAsRead mt-4 ms-2 fw-semibold'>Mark as read</div>
         </div>
     );
 };

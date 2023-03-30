@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import News from '../News/News';
+import Time from '../Time/Time';
 import './Container.css'
 
 const Container = () => {
 const [ news, setNews] = useState([])
 
 const [cart, setCart]= useState([])
+const [time, setTime] = useState([])
 
 useEffect(()=> {
     fetch ('info.json')
@@ -15,11 +17,15 @@ useEffect(()=> {
 }, [])
 
 const handelAddToCart =(news)=>{
-    // console.log(news)
     const newCart = [...cart, news];
-    setCart (newCart);
+    setCart (newCart);   
 }
 
+const handelSpendTime = (news)=> {
+    // console.log(news)
+    const newTime = [...time, news];
+    setTime(newTime);
+}
     return (
         <div className='container'>
              <div className='col content-container'>
@@ -28,6 +34,7 @@ const handelAddToCart =(news)=>{
                         key={news.id}
                         news ={news}
                         handelAddToCart = {handelAddToCart}
+                        handelSpendTime = {handelSpendTime}
                         ></News>)
                 }
                 {/* question and answer part  */}
@@ -51,6 +58,9 @@ can do  props change: updating fetched API data to get BTC updated price.</p>
 
             </div>
             <div className='col cart-container'>
+            <div className='cart-time mb-4 p-3 rounded-4'>
+                <Time time ={time}></Time>
+                </div>
                 <Cart cart = {cart}></Cart>
             </div>
         </div>
