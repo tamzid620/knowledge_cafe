@@ -4,6 +4,7 @@ import viteicon from '/programming.png'
 import './App.css'
 import Header from './Components/Header/Header'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from './Components/Container/Container'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
+      <Container></Container>
     </div>
   )
 }
