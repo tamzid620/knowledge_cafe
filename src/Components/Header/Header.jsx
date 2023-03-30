@@ -3,14 +3,14 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <nav>
+        <nav className='container d-flex justify-content-between mt-3'>
             <div>
             <h2>Programming Fair</h2>
             </div>
             <div  className='navimg'>
-                <img src="/programmer.jpg" alt="" />
+                <img className='rounded-5' src="/program.png" alt="" />
             </div>
-        </nav>
+            </nav>
     );
 };
 
