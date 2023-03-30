@@ -1,15 +1,24 @@
 import React, { useEffect, useState } from 'react';
+import Cart from '../Cart/Cart';
 import News from '../News/News';
 import './Container.css'
 
 const Container = () => {
 const [ news, setNews] = useState([])
 
+const [cart, setCart]= useState([])
+
 useEffect(()=> {
     fetch ('info.json')
     .then(res => res.json())
     .then(data => setNews(data))
 }, [])
+
+const handelAddToCart =(news)=>{
+    // console.log(news)
+    const newCart = [...cart, news];
+    setCart (newCart);
+}
 
     return (
         <div className='container'>
@@ -18,6 +27,7 @@ useEffect(()=> {
                     news.map(news=> <News 
                         key={news.id}
                         news ={news}
+                        handelAddToCart = {handelAddToCart}
                         ></News>)
                 }
                 {/* question and answer part  */}
@@ -40,9 +50,8 @@ can do  props change: updating fetched API data to get BTC updated price.</p>
 </div>
 
             </div>
-            <div className='col bookmark-container'>
-                <div className='bookmark-time mb-4 p-3 rounded-4'><h6 className='fw-bold'>Spent time on read: </h6></div>
-                <div className='bookmarkedBlog p-3 rounded-2'><h6 className='fw-bold'>bookmaed Blog: </h6></div>
+            <div className='col cart-container'>
+                <Cart cart = {cart}></Cart>
             </div>
         </div>
     );

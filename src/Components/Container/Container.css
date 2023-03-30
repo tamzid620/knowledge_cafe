@@ -11,18 +11,18 @@
     color: #6047EC;
 }
 
-.bookmark-container{
+.cart-container{
     position: sticky;
     top: 0;
     
 }
 
-.bookmark-time{
+.cart-time{
     background-color:rgba(17, 17, 17, 0.05);
     color: #6047EC;
 }
 
-.bookmarkedBlog{
+.cart-blog{
     background-color: rgba(17, 17, 17, 0.05);
 }
 
