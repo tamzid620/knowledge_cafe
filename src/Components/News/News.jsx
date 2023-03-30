@@ -5,7 +5,7 @@ const News = ({news}) => {
     return (
         <div className='news'>
             <img className='rounded-top  mb-3' src={news.coverImage} alt="" />
-            <div className='d-flex justify-content-between ms-2 me-2'>
+                <div className='d-flex justify-content-between ms-2 me-2'>
                 <div className='d-flex'>
                     <div className='authorImage'><img src={news.authorImage} alt="" /></div>
                 
@@ -18,7 +18,13 @@ const News = ({news}) => {
                     <p className='fw-semibold text-secondary'>{news.readTime}</p>
                     <button></button>
                     </div>
+                </div>
+            <h2 className='blogTitle ms-2'>{news.blogTitle}</h2>
+            <div className='d-flex ms-2 text-secondary fw-semibold mt-4'>
+                <p>#beginners</p>
+                <p className='ms-3'>#programming</p>
             </div>
+            <p className='markAsRead mt-4 ms-2 fw-semibold'>Mark as read</p>
         </div>
     );
 };
