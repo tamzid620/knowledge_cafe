@@ -13,10 +13,12 @@ const News = (props) => {
 
     return (
         <div className='news'>
-            <img className='rounded-top  mb-3' src={coverImage} alt="" />
+            <div className='coverImage'>
+            <img className='rounded-top  mb-3 coverImage' src={coverImage} alt="" />
+            </div>
                 <div className='d-flex justify-content-between ms-2 me-2'>
                 <div className='d-flex'>
-                    <div className='authorImage'><img src={authorImage} alt="" /></div>
+                    <div className='authorImage'><img  src={authorImage} alt="" /></div>
                 
                     <div className='ms-3'>
                         <div><h5 className='fw-bold '>{authorName}</h5></div>

@@ -27,8 +27,9 @@ const handelSpendTime = (news)=> {
     setTime(newTime);
 }
     return (
-        <div className='container'>
-             <div className='col content-container'>
+        <div className=''>
+    <div className='row ms-2 me-2'>
+             <div className='col-lg-8 content-container'>
                 {
                     news.map(news=> <News 
                         key={news.id}
@@ -57,12 +58,13 @@ can do  props change: updating fetched API data to get BTC updated price.</p>
 </div>
 
             </div>
-            <div className='col cart-container'>
+            <div className=' col-lg-4 cart-container '>
             <div className='cart-time mb-4 p-3 rounded-4'>
                 <Time time ={time}></Time>
                 </div>
                 <Cart cart = {cart}></Cart>
             </div>
+     </div>
         </div>
     );
 };

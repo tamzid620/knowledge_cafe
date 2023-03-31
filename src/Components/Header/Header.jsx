@@ -3,7 +3,7 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <nav className='container d-flex justify-content-between mt-3 mb-5'>
+        <nav className='ms-5 me-5 d-flex justify-content-between mt-3 mb-5'>
             <div>
             <h2>Programming Fair</h2>
             </div>
