@@ -40,6 +40,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+    body{
+        background-color: rgba(100, 148, 237, 0.218)
+    }
     .coverImage img{
         width: 380px;
         height: 300px;

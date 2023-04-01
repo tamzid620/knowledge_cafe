@@ -12,12 +12,9 @@ for(const news of time){
     total =  total + news.readTime;
 }
     
-// const time = (props)=>{
-//     const time = props.time;
-//     }
     return (
         <div>
-            <h6 className='fw-bold'>Spent time on read:{total} min </h6>
+            <h6 className='cart-time fw-bold mb-4 p-3 rounded-4 '>Spent time on read:{total} min </h6>
         </div>
     );
 };

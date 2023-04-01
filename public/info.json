@@ -2,7 +2,7 @@
     {
         "id": 1,
         "authorName": "Mr Ali",
-        "blogTitle": "How to get your first job as a self-taught programmer",
+        "blogTitle": "What is computer programming?",
         "coverImage": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80" ,
         "authorImage":"https://vzn-dmg-prdb-asset-cdn.azureedge.net/0glGC47-w1wHh58deabReCHAY9xmB239_iRWCuuW0IU/gravity:sm/resize:fill:800:800:1:1/aHR0cHM6Ly9kbWd3ZWJwcm9kc3RvcmFnZS5ibG9iLmNvcmUud2luZG93cy5uZXQvZG1ncHJvZHdlYi9waHlzaWNpYW4taGVhZHNob3RzL0FsaV9SYWZpX01EX0dhc3Ryb2VudGVyb2xvZ3lfODU2MV9XZWIuanBn.webp",
         "readTime": 25 ,
@@ -11,7 +11,7 @@
     {
         "id": 2,
         "authorName": "obaidul quader",
-        "blogTitle": "How to get your first job as a self-taught programmer",
+        "blogTitle": "Need Help With Coding?",
         "coverImage":"https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80" ,
         "authorImage":"https://www.newsbangla24.com/assets/news_images/2022/11/29/Obaidul-Quader-Thumb.jpg",
         "readTime": 3 ,
@@ -20,7 +20,7 @@
     {
         "id": 3,
         "authorName": "John Wick",
-        "blogTitle": "How to get your first job as a self-taught programmer",
+        "blogTitle": "How Tumblr taught young women to code?",
         "coverImage": "https://images.unsplash.com/photo-1521185496955-15097b20c5fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80",
         "authorImage":"https://pyxis.nymag.com/v1/imgs/a85/912/a5ef47190c966169cf6e9c6da815b0f0ad-07-john-wick-2-2.rhorizontal.w700.jpg",
         "readTime": 9 ,
@@ -29,7 +29,7 @@
     {
         "id": 4,
         "authorName": "JIm Carrey",
-        "blogTitle": "How to get your first job as a self-taught programmer",
+        "blogTitle": "How I Code Now?",
         "coverImage":"https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=906&q=80" ,
         "authorImage":"https://e0.pxfuel.com/wallpapers/480/50/desktop-wallpaper-ace-ventura-pet-detective-1994-jim-carrey-ace-ventura.jpg",
         "readTime": 22 ,

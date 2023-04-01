@@ -8,6 +8,8 @@ const News = (props) => {
 
     const handelAddToCart = props.handelAddToCart;
     const handelSpendTime = props.handelSpendTime;
+
+
     
     
 

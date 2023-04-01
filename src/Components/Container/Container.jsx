@@ -3,6 +3,7 @@ import Cart from '../Cart/Cart';
 import News from '../News/News';
 import Time from '../Time/Time';
 import './Container.css'
+import { ToastContainer, toast } from 'react-toastify';
 
 const Container = () => {
 const [ news, setNews] = useState([])
@@ -15,14 +16,23 @@ useEffect(()=> {
     .then(res => res.json())
     .then(data => setNews(data))
 }, [])
+// -----------------------
 
-const handelAddToCart =(news)=>{
-    const newCart = [...cart, news];
-    setCart (newCart);   
-}
+const handelAddToCart = (news) => {
+  // Check if the news item is already in the cart
+  const alreadyInCart = cart.some((bookmark) => bookmark.blogTitle === news.blogTitle);
+  if (alreadyInCart) {
+    toast("Already Added !");
+    // return;
+  }
+  else{
+    // If not already in cart, add the news item to the cart
+  const newCart = [...cart, news];
+  setCart(newCart);
+  }
+};
 
 const handelSpendTime = (news)=> {
-    // console.log(news)
     const newTime = [...time, news];
     setTime(newTime);
 }
@@ -59,10 +69,13 @@ can do  props change: updating fetched API data to get BTC updated price.</p>
 
             </div>
             <div className=' col-lg-4 cart-container '>
-            <div className='cart-time mb-4 p-3 rounded-4'>
-                <Time time ={time}></Time>
+            <div className=' mb-4 p-3 rounded-4'>
+                <Time time ={time}
+                ></Time>
                 </div>
-                <Cart cart = {cart}></Cart>
+                <Cart cart = {cart}
+                ></Cart>
+                <ToastContainer></ToastContainer>
             </div>
      </div>
         </div>
