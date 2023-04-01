@@ -11,15 +11,14 @@ const [ news, setNews] = useState([])
 const [cart, setCart]= useState([])
 const [time, setTime] = useState([])
 
+
 useEffect(()=> {
     fetch ('info.json')
     .then(res => res.json())
     .then(data => setNews(data))
 }, [])
-// -----------------------
-
 const handelAddToCart = (news) => {
-  // Check if the news item is already in the cart
+//   Check if the news item is already in the cart
   const alreadyInCart = cart.some((bookmark) => bookmark.blogTitle === news.blogTitle);
   if (alreadyInCart) {
     toast("Already Added !");
